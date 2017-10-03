@@ -1,0 +1,94 @@
+
+
+
+
+var data = {
+	menu:{
+		'main':[
+			{
+				name:'新建...',
+				child:[
+					{
+						name:'新建文件夹',
+						callBack:'createFile'
+					}
+				]
+			},
+			{
+				name:'粘贴',
+				id:'paste',
+				callBack:'paste'
+			},
+			{
+				name:'刷新'
+			},
+			{
+				name:'更改桌面壁纸',
+				callBack:'changeBg'
+			},
+			{
+				name:'排序...',
+				child:[
+					{
+						name:'按时间排序',
+						callBack:'sortTime'
+					},
+					{
+						name:'按名称排序排序',
+						callBack:'sortName'
+					}
+				]
+			},
+			{
+				name:'上传',
+				callBack:'loading'
+			}
+		],
+		'file':[
+			{
+				name:'重命名',
+				id:'rename',
+				callBack:'rename'
+			},
+			{
+				name:'删除',
+				id:'del',
+				callBack:'del'
+			},
+			{
+				name:'复制',
+				id:'copy',
+				callBack:'copy'
+			}
+		]
+	},
+	list:[
+		{
+			id:1,
+			pid:0,
+			name:'新建文件夹',
+			type:'file'
+		},
+		{
+			id:2,
+			pid:0,
+			name:'新建文件夹(2)',
+			type:'file'
+		},
+		{
+			id:3,
+			pid:0,
+			name:'新建文件夹(3)',
+			index:2,
+			type:'file'
+		},
+		{
+			id:4,
+			pid:0,
+			name:'文本',
+			type:'text'
+		}
+		
+	]
+	
+}

@@ -1,0 +1,449 @@
+body,
+p {
+	margin: 0;	
+}
+body {
+	position: relative;
+	overflow: hidden;
+}
+html.bgName {
+	background: url(../img/main_bg1.jpg) no-repeat center;
+	/*background: #eff4f8;*/
+}
+body.change {
+	width: 80%;
+	margin-left: 15%;
+	margin-right: 5%;
+	
+}
+#bg {
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg2.jpg) no-repeat center center;
+	background-size: cover;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+img {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	vertical-align: top;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+video {
+	vertical-align: middle;
+}
+p {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+#wrap {
+	box-sizing: border-box;
+	padding: 0px 30px;
+}
+#wrap.border {
+	border: 1px solid #d8deea;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+#wrap img {
+	width: 40px;
+	height: 45px;
+}
+#wrap li,
+#wrap #rub {
+	position: absolute;
+	top: 0;
+	left: 25px;
+	padding: 10px 1px 1px 1px;
+	width: 100px;
+	text-align: center;
+	margin: 10px 0;
+	box-sizing: border-box;
+	z-index: 2;
+}
+#wrap li.hover {
+	padding: 9px 0 0 0;
+	background: rgba(236,248,252,.2);
+	border: 1px solid #97d4e9;
+}
+#wrap li.active {
+	padding: 9px 0 0 0;
+	background: rgba(236,248,252,.4);
+	border: 1px solid #97d4e9;
+}
+#wrap li.active.hover {
+	padding: 9px 0 0 0;
+	background: rgba(236,248,252,.6);
+	border: 1px solid #97d4e9;
+}
+#wrap p,
+#wrap input {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100px;
+	height: 22px;
+	margin: 0;
+	margin-top: 4px;
+	text-align: center;
+	font: 14px/22px "微软雅黑";
+	color: #fff;
+}
+#nameSame {
+	display: none;
+	position: absolute;
+	left: 35%;
+	top: 35%;
+	width: 300px;
+	padding: 30px;
+	background: rgba(0,0,0,.2);
+	border-radius: 8px;
+	z-index: 2;
+}
+#nameSame strong {
+	font: 16px/40px "微软雅黑";
+	color: #54a1e2;
+}
+#nameSame span {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background: rgba(255,255,255,.3);
+	text-align: center;
+	cursor: pointer;
+	font: 16px/20px "微软雅黑";
+}
+#nameSame span:hover {
+	background: rgba(255,255,255,.5);
+}
+#wrap input {
+	box-sizing: border-box;
+	background: rgba(0,0,0,0);
+	display: none;
+}
+#menu {
+	position: absolute;
+	display: none;
+	z-index: 2;
+}
+#file {
+	display: none;
+}
+#menu ul,
+#singleNav ul {
+	width: 180px;
+	border: 1px solid #ccc;
+	background: #f1f1f1;
+}
+#menu li {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	line-height: 20px;
+}
+#menu li p,
+#singleNav p {
+	margin: 0;
+	padding: 15px 20px;
+}
+#menu li:hover,
+#singleNav li:hover {
+	background: #f8f8f8;
+}
+
+#menu ul li ul {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 180px;
+}
+#imgWrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 2;
+}
+.forImg {
+	position:absolute;
+	top: 5%;
+	left: 10%;
+	right: 10%;
+	bottom: 5%;
+	max-width: 80%;
+	max-height: 90%;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	overflow: hidden;
+}
+.forImg span {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 10px;
+	background: #9E9BF6;
+}
+.kong {
+	position:absolute;
+	top: 40px;
+	overflow: auto;
+	padding: 20px;
+	width: 100%;
+	height: 90%;
+	z-index: 3;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5) url('../img/loading.gif') no-repeat center;
+	text-align: center;
+}
+.forImgIn {
+	position:absolute;
+	top: 40px;
+	overflow: auto;
+	padding: 20px;
+	width: 100%;
+	height: 90%;
+	box-sizing: border-box;
+	background: #f1f1f1;
+	text-align: center;
+}
+.forImg .forTextIn {
+	text-align: left;
+	text-indent: 10px;
+}
+.forImg span:hover {
+	background: #ccc;
+}
+.spanDel {
+	width: 100%;
+	height: 39px;
+	border-bottom: 1px solid #bfb5b5;
+	background: linear-gradient(#ccc 0%,#f1f1f1 100%);
+}
+.videos {
+	height: 100%;
+}
+#upload {
+	position:absolute;
+	left: -1000px;
+	top: -1000px;
+}
+#nav {
+	display: none;
+	position: absolute;
+	top: -60px;
+	z-index: 10;
+}
+#nav .prev {
+	margin-right: 5px;
+}
+#nav>a{
+	float:left;
+}
+#nav a {
+	font-size: 20px;
+}
+#nav .line {
+	float: left;
+}
+#nav span,
+#nav a {
+	font-size: 20px;
+	margin: 0 5px;
+	color: #fff;
+}
+#nav span {
+	color: #ccc;
+}
+#navSide {
+	display: none;
+	position: absolute;
+	left: -170px;
+	top: 30px;
+}
+#navSide span {
+	font-size: 20px;
+}
+#navSide ul {
+	width: 150px;
+	height: 100%;
+	overflow: auto;
+}
+#navSide li {
+	margin: 7px 0;
+	color: #fff;
+}
+#navSide li:hover {
+	cursor: pointer;
+	color: #5345ea;
+}
+.content {
+	float: left;
+}
+.content li {
+	float: left;
+}
+
+/*时间日期*/
+#date {
+	position: absolute;
+	top:-800px;
+	right: 0;
+	z-index: 2;
+	background: #fff;
+}
+#time {
+	position: absolute;
+	top: 85px;
+	right: 20px;
+	width: 160px;
+	height: 160px;
+	border: 2px solid #4e6f76;
+	border-radius: 50%;
+	background: url(../img/timeBg1.jpeg) no-repeat center;
+	opacity: .6;
+}
+#time p:nth-of-type(1) {
+	position: absolute;
+	top: 35px;
+	left: 78px;
+	width: 4px;
+	height: 45px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	transform-origin: 3px bottom;
+	background: #000;
+}
+#time p:nth-of-type(2) {
+	position: absolute;
+	top: 25px;
+	left: 78px;
+	width: 3px;
+	height: 55px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	transform-origin: 2px bottom;
+	background: #4e6f76;
+}
+#time p:nth-of-type(3) {
+	position: absolute;
+	top: 15px;
+	left: 79px;
+	width: 2px;
+	height: 65px;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+	transform-origin: 1px bottom;
+	background: #569c72;
+}
+#time span {
+	position: absolute;
+	top: 0;
+	left: 79px;
+	width: 2px;
+	height: 5px;
+	transform-origin: center 80px;
+	background: #a3a3a3;
+}
+#time span:nth-of-type(5n+1) {
+	height: 8px;
+	background: #000;
+}
+#time .point {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;;
+	background: #000;
+	
+}
+#dateTime {
+	padding: 30px;
+	padding-top: 60px;
+	padding-right: 200px;
+}
+#dateTime th {
+	width: 36px;
+	height: 16px;
+	border: none;
+}
+#dateTime td {
+	width: 14%;
+	height: 16px;
+	border: none;
+	text-align: center;
+}
+#dateTime select {
+	margin-bottom: 5px;
+	width: 100px;
+	height: 30px;
+}
+#dateTime p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 45px;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 45px;
+	border-bottom: #ccd9ea;
+	box-shadow: inset 0 -1px 10px #ccd9ea;
+	background: #f1f5fb;
+}
+#dateOut {
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+#boxImage {
+	position: absolute;
+	top: 68px;
+	right: 48px;
+	text-align: center;
+	line-height: 40px;
+}
+#boxImage img {
+	width: 16px;
+	height: 28px;
+	vertical-align: middle;
+}
+#boxImage #week {
+	width: 38px;
+}
+#boxImage .date {
+	width: 16px;
+	height: 28px;
+}
+#boxImage .word {
+	width: 20px;
+}
+/*时间日期结束*/
+#region .rectangle {
+	border: 1px dashed #ccc;
+}
