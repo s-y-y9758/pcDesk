@@ -98,7 +98,7 @@ var contextCallback = {
 		,'img/bg10.jpg'
 		// ,'img/bg5.jpg'
 		,'img/bg6.jpg'
-		,'img/bg7.png'
+		,'img/bg7.jpg'
 		,'img/bg8.jpg'
 		,'img/bg9.jpg'
 		]
